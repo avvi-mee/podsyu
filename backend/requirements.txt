@@ -1,0 +1,19 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+sqlalchemy>=2.0.36
+pydantic>=2.9
+httpx>=0.27
+python-dotenv>=1.0
+numpy>=1.26
+opencv-python-headless>=4.10
+faster-whisper>=1.1
+yt-dlp[default]>=2025.11.12
+google-api-python-client>=2.150
+google-auth-oauthlib>=1.2
+google-auth-httplib2>=0.2
+tzdata>=2024.2
+kokoro-onnx>=0.4  # local text-to-speech (Kokoro, Apache-2.0) for ASMR story narration
+# CUDA 12 runtime libraries for faster-whisper (CTranslate2) on NVIDIA GPUs.
+# Harmless on CPU-only machines; the app falls back to CPU automatically.
+nvidia-cublas-cu12; sys_platform == "win32" or sys_platform == "linux"
+nvidia-cudnn-cu12>=9,<10; sys_platform == "win32" or sys_platform == "linux"

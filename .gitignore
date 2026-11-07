@@ -1,0 +1,13 @@
+.env
+data/
+models/whisper/
+models/*.onnx
+backend/.venv/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/.next/
+frontend/.env*.local
+models/tts/
+backend/__pycache__/
+*.log
